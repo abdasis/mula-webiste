@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-dark-custom {
+    background: #3e3e3e;
+}
+
+#search-form {
+    border-radius: 2px;
+    border: 1px solid #eee;
+}
+
+#btn-search {
+    border-radius: 2px;
+}
+
+.nav-link-color {
+    /* color: #57aee9; */
+    color: #fff;
+}
+
+.image-slider {
+    height: 650px;
+    object-fit: cover;
+    width: auto;
+}
+
+.margin-section {
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.service-box {
+    border: none;
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.icon-service {
+    color: #56aceb;
+}
+
+.service-title {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.penawaran-wrapper {
+    margin-top: 40px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.box-content {
+    border: none;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px 1px rgba(115, 128, 157, 0.1);
+}
+
+.footer {
+    background: rgb(29, 26, 26);
+    border-top: 6px solid #56aceb;
+}
+
+.footer-widget {
+    padding: 50px 0;
+}
+.widget-title h1 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(56, 54, 54);
+    padding-bottom: 5px;
+}
+.content-widget {
+    color: #fff;
+}
