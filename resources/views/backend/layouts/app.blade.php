@@ -25,7 +25,9 @@
   <!-- summernote -->
   <link rel="stylesheet" href="{{ url('/') }}/backend/plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
+  @yield('css-plugin')
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
 </head>
 <body class="sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -72,6 +74,7 @@
   </div>
   <!-- /.content-wrapper -->
   
+    @include('backend.includes.footer')
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -86,15 +89,13 @@
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ url('/') }}/backend/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
 <!-- Bootstrap 4 -->
 <script src="{{ url('/') }}/backend/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->
 <script src="{{ url('/') }}/backend/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="{{ url('/') }}/backend/dist/js/adminlte.js"></script>
-
+@yield('js-plugin')
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js"></script>
 </body>
 </html>

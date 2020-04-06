@@ -20,7 +20,7 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-flat nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <ul class="nav nav-flat nav-legacy nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treevie">
@@ -31,7 +31,7 @@
               </p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview {{ Request::is('admin/katalog*') ? 'menu-open' : "" }}">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
@@ -41,7 +41,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('katalog.index') }}" class="nav-link active">
+                <a href="{{ route('katalog.index') }}" class="nav-link {{ Request::is('admin/katalog/index') ? 'active' : '' }}">
                   <i class="fas fa-plus nav-icon"></i>
                   <p>Informasi</p>
                 </a>
