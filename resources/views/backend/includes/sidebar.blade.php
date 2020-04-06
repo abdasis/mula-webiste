@@ -23,8 +23,8 @@
         <ul class="nav nav-flat nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treevie">
+            <a href="{{ route('index') }}" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -41,7 +41,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="{{ route('katalog.index') }}" class="nav-link active">
                   <i class="fas fa-plus nav-icon"></i>
                   <p>Informasi</p>
                 </a>
