@@ -4,6 +4,7 @@
 @section('content')
     <div class="container-fluid">
         <form action="{{ route('katalog.store') }}" method="POST">
+            @csrf
             <div class="row row-cols-2">
                 <div class="col-md-9">
                     <div class="card">
@@ -38,7 +39,7 @@
                             {{-- kategori form  --}}
                             <div class="form-group mt-2">
                                 <label>Kategori</label>
-                                <select class="custom-select">
+                                <select class="custom-select" name="category_post">
                                   <option>Pilih Kategori</option>
                                   <option>option 2</option>
                                   <option>option 3</option>
@@ -51,7 +52,7 @@
                                 <!-- <label for="customFile">Custom File</label> -->
                                 <label for="">Pilih Thumbnail</label>
                                 <div class="custom-file">
-                                  <input type="file" class="custom-file-input" id="customFile">
+                                  <input type="file" class="custom-file-input" name="thumbnail_post" id="customFile">
                                   <label class="custom-file-label" for="customFile">Choose file</label>
                                 </div>
                               </div>

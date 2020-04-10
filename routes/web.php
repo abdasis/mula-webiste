@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.layouts.app');
+Route::group(['prefix' => '/'], function () {
+    Route::get('', 'HomeController@index');
+    Route::get('{slug}', 'PostController@detailPage')->name('page.detail-page');
 });
-
 Auth::routes();
 
 Route::group(['prefix' => 'admin'], function () {
-    // route index 
+    // route index
     Route::get('/', 'PostController@index')->name('index');
-    // group route katalog 
+    // group route katalog
     Route::group(['prefix' => 'katalog'], function () {
         Route::get('/', 'PostController@indexCatalog')->name('katalog.index');
         Route::get('tambah-informasi', 'PostController@create')->name('katalog.create');
@@ -32,3 +32,6 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('hapus-informasi', 'PostController@hapus')->name('katalog.hapus');
     });
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
