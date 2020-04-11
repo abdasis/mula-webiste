@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                             <div class="card-text">
-                                {{ $page->content }}
+                                {!! $page->content !!}
                             </div>
                         </div>
                     </div>
