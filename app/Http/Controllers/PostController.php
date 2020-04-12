@@ -16,7 +16,9 @@ class PostController extends Controller
 
     public function indexCatalog()
     {
-        return view('backend.layouts.catalog.index');
+        $catalogs = Post::all();
+
+        return view('backend.layouts.catalog.index')->with(['catalogs' => $catalogs]);
     }
 
     public function create()
