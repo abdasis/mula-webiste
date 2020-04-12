@@ -31,6 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.js"></script>
 </head>
 <body class="sidebar-mini layout-fixed">
+@include('sweetalert::alert')
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -74,7 +75,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  
+
     @include('backend.includes.footer')
 
   <!-- Control Sidebar -->

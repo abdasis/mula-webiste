@@ -9,11 +9,11 @@
     </div>
     <div class="content-wrapper container">
         <div class="row justify-content-center">
-            <div class="col-md-8 col-sm-12">
+            <div class="col-md-10 col-sm-12">
                 <div class="content-wrapper">
                     <div class="card">
 
-                        <div class="card-body">
+                        <div class="card-body box-content">
                             <div class="meta">
                                 <div class="card-text">
                                 </div>

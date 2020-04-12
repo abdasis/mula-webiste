@@ -9,6 +9,10 @@
                 </div>
                 <div class="card-tools">
                     <a href="{{ route('katalog.create') }}">
+                        <button class="btn btn-warning btn-sm">
+                            <i class="fa fa-trash"></i>
+                            Trash Post
+                        </button>
                         <button class="btn btn-primary btn-sm"><i class="fa fa-plus-circle mr-2"></i>Tambah Informasi</button>
                     </a>
                 </div>
@@ -42,7 +46,7 @@
                                     View
                                 </button>
                             </a>
-                            <a href="{{ route('katalog.hapus' , $catalog->slug) }}">
+                            <a href="{{ route('katalog.hapus' , $catalog->id) }}">
                                 <button class="btn btn-outline-danger btn-sm">
                                     <i class="fa fa-trash-alt mr-1"></i>
                                     Hapus
@@ -60,7 +64,7 @@
                         <th>Action</th>
                     </tr>
                     </tfoot>
-                  </table>
+                </table>
             </div>
         </div>
     </div>

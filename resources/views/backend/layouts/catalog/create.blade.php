@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="container-fluid">
-        <form action="{{ route('katalog.store') }}" method="POST">
+        <form action="{{ route('katalog.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row row-cols-2">
                 <div class="col-md-9">
@@ -14,7 +14,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            
+
                                 <div class="form-group">
                                     <label for="judul-post">Title Informasi</label>
                                     <input type="text" class="form-control" placeholder="Masukan Judul Disini" name="title_post" id="judul-post">
@@ -41,10 +41,9 @@
                                 <label>Kategori</label>
                                 <select class="custom-select" name="category_post">
                                   <option>Pilih Kategori</option>
-                                  <option>option 2</option>
-                                  <option>option 3</option>
-                                  <option>option 4</option>
-                                  <option>option 5</option>
+                                  @foreach ($categories as $category)
+                                  <option value="{{ $category->category_name }}">{{ $category->category_name }}</option>
+                                  @endforeach
                                 </select>
                             </div>
                             <hr>
@@ -58,7 +57,7 @@
                               </div>
                         </div>
                     </div>
-                
+
                 </div>
             </div>
         </form>

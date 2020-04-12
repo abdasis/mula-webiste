@@ -41,9 +41,16 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('katalog.index') }}" class="nav-link {{ Request::is('admin/katalog/index') ? 'active' : '' }}">
+                <a href="{{ route('katalog.index') }}" class="nav-link {{ Request::is('admin/katalog') ? 'active' : '' }}">
                   <i class="fas fa-plus nav-icon"></i>
                   <p>Informasi</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route('category.index') }}" class="nav-link {{ Request::is('admin/category') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Category</p>
                 </a>
               </li>
             </ul>

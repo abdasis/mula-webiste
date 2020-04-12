@@ -18,7 +18,9 @@ class CreatePostsTable extends Migration
             $table->string('slug', 150);
             $table->string('title', 250);
             $table->longText('content');
+            $table->string('thunmbnail', 250)->nullable()->default('no-tumbnail.png');
             $table->timestamps();
+            $table->dateTime('deleted_at')->nullable();
         });
     }
 

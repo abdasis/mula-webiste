@@ -30,8 +30,10 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('tambah-informasi', 'PostController@store')->name('katalog.store');
         Route::get('edit-informasi/{id}', 'PostController@edit')->name('katalog.edit');
         Route::post('edit-informasi', 'PostController@update')->name('katalog.update');
-        Route::get('hapus-informasi', 'PostController@hapus')->name('katalog.hapus');
+        Route::get('hapus-informasi/{id}', 'PostController@hapus')->name('katalog.hapus');
     });
+
+    Route::resource('category', 'CategoryController');
 });
 Auth::routes();
 
