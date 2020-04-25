@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,18 +15,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['prefix' => '/'], function () {
-    Route::get('', function ()
-    {
+    Route::get('', function () {
         return view('frontend.index');
     });
-    Route::get('{slug}', 'PostController@detailPage')->name('page.detail-page');
+    Route::get('contact-us', 'ContactUsController@create')->name('contact.create');
+    Route::post('contact-us', 'ContactUsController@store')->name('contact.store');
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/lowongan-kerja', 'HomeController@loker')->name('home.loker');
 });
+
+Auth::routes();
 Route::group(['prefix' => 'admin'], function () {
     // route index
     Route::get('/', 'PostController@index')->name('index');
     // group route katalog
     Route::group(['prefix' => 'katalog'], function () {
-        Route::get('/', 'PostController@indexCatalog')->name('katalog.index');
         Route::get('tambah-informasi', 'PostController@create')->name('katalog.create');
         Route::post('tambah-informasi', 'PostController@store')->name('katalog.store');
         Route::get('edit-informasi/{id}', 'PostController@edit')->name('katalog.edit');
@@ -35,6 +39,6 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::resource('category', 'CategoryController');
 });
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+// Route untuk frontend

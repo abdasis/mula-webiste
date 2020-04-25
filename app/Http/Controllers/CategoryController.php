@@ -37,7 +37,7 @@ class CategoryController extends Controller
 
         if ($categories) {
             Alert::success('Berhasil', 'Kategori Berhasil Ditambahkan');
-            return redirect()->route('category.create');
+            return redirect()->route('category');
         }
 
     }

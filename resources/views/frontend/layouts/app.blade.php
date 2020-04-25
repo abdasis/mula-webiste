@@ -20,7 +20,7 @@
 <body>
         <nav class="wrapper">
         <!-- top navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4" style="background: #f1f3ee;" id="top-nav">
+        <nav class="navbar navbar-expand-lg navbar-light p-4" style="background: #fff;" id="top-nav">
             <div class="container">
                 <a class="navbar-brand" href="#">PT MITRA LESTARI ABADI</a>
                 <form class="form-inline my-2 my-lg-0">
@@ -34,41 +34,8 @@
         </nav>
         <!-- end top navbar  -->
         <!-- start button nav  -->
-        <nav class="navbar navbar-expand-lg bg-dark-custom text-dark">
-            <div class=" container">
-            <div class="row">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color active" href="#">MULA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color" href="#">PRODUCT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color" href="#">SERVICE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color" href="#">INDUSTRI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color" href="#">PATNER PERUSAHAAN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color" href="#">BERITA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color" href="#">LOWONGAN KERJA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-color" href="#">HUBUNGI KAMI</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-
+        @include('frontend.includes.navbar')
         @yield('content')
-
         <section class="footer">
             <div class="container">
                 <div class="footer-widget">
