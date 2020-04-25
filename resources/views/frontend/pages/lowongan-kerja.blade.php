@@ -14,7 +14,7 @@
             <div class="col-md-8">
                <div class="container">
                     <div class="box-content-loker p-4">
-                        <b>BEKERJA BERSAMA KAMI</b>
+                        <h4>BEKERJA BERSAMA KAMI</h4>
                 <p>Jika Anda tertarik untuk datang dan bergabung Bersama Perusahaan kami, kami bisa memberikan penawaran:</p>
 
                 <p>Sebuah profesi
@@ -26,8 +26,8 @@
                 <p> Jika Anda tertarik untuk dating dan bergabung, silahkan kirimkan CV melalui email ke:</p>
 
                 <p>PT Mitra Utama Lestari Abadi</p>
-                <p>Ruko Griya Alifa Kav B-2 Jl Puloribung Pekayon Jaya Bekasi Selatan INDONESIA
-                    Email: sales@mula.co.id</p>
+                <p>Ruko Griya Alifa Kav B-2 Jl Puloribung Pekayon Jaya Bekasi Selatan INDONESIA</p>
+                <p>Email: sales@mula.co.id</p>
 
                 <p>Jika kriteria dan pengalaman Anda sesuai dengan kebutuhan kami, kami akan segera menghubungi Anda</p>
 
@@ -38,14 +38,18 @@
                     </div>
                </div>
             </div>
-            <div class="col-md-4">
-                <div class="container">
-                    <div class="box-content-loker p-4">
-                        <div class="well well-blue">
+            <div class="col-md-4 ">
+                <div class="container well well-blue">
+                    <div class="box-content-loker">
+                        <div class="">
                             <h3>Informasi Lowongan kerja</h3>
-                            <p><b>Senior Sales Manager untuk Refractory</b><br>Kriteria</p>
-                            <p><b>Senior Sales Manager untuk Abrasive Blasting material</b><br>Kriteria</p>
-                            <p><b>Finance officer (Tax)</b><br>Kriteria</p>
+                            <hr>
+                            <h4>Senior Sales Manager untuk Refractory</h4>
+                            <p>Kriteria</p>
+                            <h4>Senior Sales Manager untuk Abrasive Blasting material</h4>
+                            <p>Kriteria</p>
+                            <h4>Finance officer (Tax)</h4>
+                            <p>Kriteria</p>
                           </div>
                     </div>
                 </div>
