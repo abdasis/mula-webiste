@@ -22,6 +22,9 @@ Route::group(['prefix' => '/'], function () {
     Route::post('contact-us', 'ContactUsController@store')->name('contact.store');
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/lowongan-kerja', 'HomeController@loker')->name('home.loker');
+    Route::get('/berita', 'HomeController@berita')->name('home.berita');
+    Route::get('/partner-perusahaan', 'HomeController@partner')->name('home.partner');
+    Route::get('/industri', 'HomeController@industri')->name('home.industri');
 });
 
 Auth::routes();

@@ -16,4 +16,19 @@ class HomeController extends Controller
     {
         return view('frontend.pages.lowongan-kerja');
     }
+
+    public function berita()
+    {
+        return view('frontend.pages.berita');
+    }
+
+    public function partner()
+    {
+        return view('frontend.pages.partner-perusahaan');
+    }
+
+    public function industri()
+    {
+        return view('frontend.pages.industri');
+    }
 }

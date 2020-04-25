@@ -12,16 +12,16 @@
                 <a class="nav-link nav-link-color" href="#">SERVICE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-color" href="#">INDUSTRI</a>
+                <a class="nav-link nav-link-color" href="{{ route('home.industri') }}">INDUSTRI</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-color" href="#">PATNER PERUSAHAAN</a>
+                <a class="nav-link nav-link-color" href="{{ route('home.partner') }}">PATNER PERUSAHAAN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-color" href="#">BERITA</a>
+                <a class="nav-link nav-link-color" href="{{ route('home.berita') }}">BERITA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-color" href="#">LOWONGAN KERJA</a>
+                <a class="nav-link nav-link-color" href="{{ route('home.loker') }}">LOWONGAN KERJA</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-link-color" href="#">HUBUNGI KAMI</a>
