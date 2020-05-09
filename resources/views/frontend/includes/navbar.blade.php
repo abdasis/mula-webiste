@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark-custom text-dark">
+<nav class="navbar navbar-expand-lg bg-dark-custom text-dark d-none d-md-block">
     <div class=" container">
     <div class="row">
         <ul class="nav justify-content-center">

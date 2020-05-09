@@ -15,8 +15,8 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="row">
-                        <div class="col-md-6 p-5">
-                            <div class="left-content p-2">
+                        <div class="col-md-6">
+                            <div class="left-content p-3">
                                 <h3>Hubungi Kami</h3>
                                 <p class="title-content">PT Mitra Utama Lestari Abadi</p>
                                 <p class="sub-title-content"> Kantor Pusat (Head Office)</p>
@@ -46,8 +46,8 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="col-md-6 p-5">
-                            <div class="container p-5 shadow-sm" style="border-top: 5px solid orange">
+                        <div class="col-md-6">
+                            <div class="container p-5">
                                 <h3 class="card-title mb-4">
                                     Form Kontak
                                 </h3>

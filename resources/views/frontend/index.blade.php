@@ -46,8 +46,8 @@
     <section class="layanan margin-section">
         <div class="container">
             <div class="container">
-                <div class="row row-cols-4">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 mb-2">
                         <div class="card service-box">
                             <div class="card-body  text-center">
                                 <i class="fa fa-home fa-3x icon-service"></i>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3 col-sm-12 mb-2">
                         <div class="card service-box">
                             <div class="card-body  text-center">
                                 <i class="fa fa-building fa-3x icon-service"></i>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3 col-sm-12 mb-2">
                         <div class="card service-box">
                             <div class="card-body  text-center">
                                 <i class="fa fa-clock fa-3x icon-service"></i>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3 col-sm-12 mb-2">
                         <div class="card service-box">
                             <div class="card-body  text-center">
                                 <i class="fa fa-thumbs-up fa-3x icon-service"></i>
@@ -109,24 +109,24 @@
             <div class="box-penawaran">
                 <div class="penawaran-wrapper">
                     <div class="row p-4">
-                        <div class="col-md-4">
-                            <div class="card box-content text-center">
+                        <div class="col-md-4 mb-2">
+                            <div class="card shadow-sm box-content text-center">
                                 <img src="{{ asset('/service-img/cns-1.jpg') }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">BUILDING CUSTRUCTION</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            </div>
                               </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card box-content text-center">
+                        <div class="col-md-4 mb-2">
+                            <div class="card shadow-sm box-content text-center">
                                 <img src="{{ asset('/service-img/cns-2.jpg') }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">PROJECT PLANNING</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            </div>
                               </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card box-content text-center">
+                        <div class="col-md-4 mb-2">
+                            <div class="card shadow-sm box-content text-center">
                                 <img src="{{ asset('/service-img/cns-3.jpg') }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">HOUSE RENOVATION</h5>
