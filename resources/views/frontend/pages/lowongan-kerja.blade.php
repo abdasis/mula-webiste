@@ -44,13 +44,16 @@
                         <div class="">
                             <h3>Informasi Lowongan kerja</h3>
                             <hr>
-                            <h4>Senior Sales Manager untuk Refractory</h4>
-                            <p>Kriteria</p>
-                            <h4>Senior Sales Manager untuk Abrasive Blasting material</h4>
-                            <p>Kriteria</p>
-                            <h4>Finance officer (Tax)</h4>
-                            <p>Kriteria</p>
-                          </div>
+                            @php
+                                use App\Models\Loker;
+                                $lokers = Loker::all();
+                            @endphp
+                            @foreach ($lokers as $key => $loker)
+
+                                <h4>{{ $loker->posisi }}</h4>
+                                <p>{!! $loker->isi_keterangan !!}</p>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>

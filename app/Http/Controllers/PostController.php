@@ -7,8 +7,9 @@ use App\Models\Post;
 use App\Models\Category;
 use DOMDocument;
 use Illuminate\Support\Str;
-use Alert;
-use Validator;
+use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Facades\Validator;
+
 class PostController extends Controller
 {
     public function index()
@@ -20,7 +21,6 @@ class PostController extends Controller
     public function indexCatalog()
     {
         $catalogs = Post::all();
-
         return view('backend.layouts.catalog.index')->with(['catalogs' => $catalogs]);
     }
 

@@ -55,6 +55,33 @@
               </li>
             </ul>
           </li>
+
+          <li class="nav-item has-treeview {{ Request::is('admin/loker*') ? 'menu-open' : "" }}">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-briefcase"></i>
+              <p>
+                Loker
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('loker.create') }}" class="nav-link {{ Request::is('admin/loker') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Tambah Loker</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route('loker.index') }}" class="nav-link {{ Request::is('admin/loker') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Daftar Loker</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-envelope-open"></i>

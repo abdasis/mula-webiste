@@ -33,6 +33,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/', 'PostController@index')->name('index');
     // group route katalog
     Route::group(['prefix' => 'katalog'], function () {
+        Route::get('/', 'PostController@indexCatalog')->name('katalog.index');
         Route::get('tambah-informasi', 'PostController@create')->name('katalog.create');
         Route::post('tambah-informasi', 'PostController@store')->name('katalog.store');
         Route::get('edit-informasi/{id}', 'PostController@edit')->name('katalog.edit');
@@ -40,6 +41,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('hapus-informasi/{id}', 'PostController@hapus')->name('katalog.hapus');
     });
 
+    Route::resource('loker', 'LokerController');
     Route::resource('category', 'CategoryController');
 });
 
