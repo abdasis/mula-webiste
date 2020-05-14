@@ -31,7 +31,6 @@
     <script src="{{ url('/') }}/backend/dist/js/summernote-bs4.min.js"></script>
 </head>
 <body class="sidebar-mini layout-fixed">
-@include('sweetalert::alert')
 <div class="wrapper">
 
   <!-- Navbar -->
