@@ -6,6 +6,7 @@ use App\Http\Requests\LokerRequest;
 use App\Models\Loker;
 use DOMDocument;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class LokerController extends Controller
 {
@@ -87,7 +88,8 @@ class LokerController extends Controller
      */
     public function edit(Loker $loker)
     {
-        //
+        $loker = Loker::find($loker->id);
+        return view('backend.layouts.loker.edit')->withLoker($loker);
     }
 
     /**
@@ -99,7 +101,13 @@ class LokerController extends Controller
      */
     public function update(Request $request, Loker $loker)
     {
-        //
+        $loker = Loker::find($loker->id);
+        $loker->posisi = $request->get('posisi');
+        $loker->isi_keterangan = $request->get('isi_keterangan');
+        $loker->save();
+        Session::flash('status', 'Lowongan berhasil di update');
+        return redirect()->back();
+
     }
 
     /**

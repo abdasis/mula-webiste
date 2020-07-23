@@ -3,6 +3,13 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
+            <div class="col-12">
+                @if (Session::has('status'))
+                    <div class="alert alert-info">{{ Session::get('status') }}</div>
+                @endif
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">
@@ -13,7 +20,10 @@
                             @csrf
                             <div class="form-group">
                                 <label for="nama_kategori">Nama Kategori</label>
-                                <input type="text" name="category_name" class="form-control" placeholder="Nama Kategori">
+                                <input type="text" name="category_name" class="form-control @error('category_name') is-invalid @enderror" placeholder="Nama Kategori">
+                                @if ($errors->has('category_name'))
+                                    <small class="text-danger">{{ $errors->first('category_name') }}</small>
+                                @endif
                             </div>
 
                             <div class="form-group">
@@ -42,12 +52,23 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach ($categories as $categori)
+                            @foreach ($categories as $key => $categori)
                             <tr>
-                                <td>{{ $categori->id }}</td>
+                                <td>{{ $key+1 }}</td>
                                 <td>{{$categori->category_name}}</td>
                                 <td>{{ $categori->created_at }}</td>
-                                <td>{{ $categori->updated_at }}</td>
+                                <td>
+                                    <div class="row">
+                                        <form action="{{ route('category.destroy', $categori->id) }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-link"><i class="fa fa-trash-alt text-danger"></i></button>
+                                        </form>
+                                        <a href="{{ route('category.edit', $categori->id) }}">
+                                            <button class="btn btn-link btn-edit" ><i class="fa fa-pencil-alt text-warning"></i></button>
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                             @endforeach
                             </tbody>
@@ -57,6 +78,7 @@
             </div>
         </div>
     </div>
+
 @endsection
 
 
@@ -90,4 +112,6 @@
       });
     });
   </script>
+
+
 @endsection

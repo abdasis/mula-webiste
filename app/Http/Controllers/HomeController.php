@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PartnerPerusahaan;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,7 +25,8 @@ class HomeController extends Controller
 
     public function partner()
     {
-        return view('frontend.pages.partner-perusahaan');
+        $partners = PartnerPerusahaan::paginate(8);
+        return view('frontend.pages.partner-perusahaan')->withPartners($partners);
     }
 
     public function industri()

@@ -100,6 +100,56 @@
             </ul>
           </li>
 
+          <li class="nav-item has-treeview {{ Request::is('admin/partner-perusahaan*') ? 'menu-open' : "" }}">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-friends"></i>
+              <p>
+                Data Partner
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('partner-perusahaan.create') }}" class="nav-link {{ Request::is('admin/partner-perusahaan') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Tambah Partner</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route('partner-perusahaan.index') }}" class="nav-link {{ Request::is('admin/partner-perusahaan') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Daftar Partner</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview {{ Request::is('admin/slider*') ? 'menu-open' : "" }}">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-images"></i>
+              <p>
+                Data Slider
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('slider.create') }}" class="nav-link {{ Request::is('admin/slider') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Tambah Slider</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route('slider.index') }}" class="nav-link {{ Request::is('admin/slider') ? 'active' : '' }}">
+                  <i class="fas fa-plus nav-icon"></i>
+                  <p>Daftar Slider</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-cogs"></i>

@@ -13,7 +13,7 @@
                             @csrf
                             <div class="form-group">
                                 <label for="nama_kategori">Nama Kategori</label>
-                                <input type="text" name="category_name" class="form-control" placeholder="Nama Kategori">
+                                <input type="text" name="category_name " class="form-control @error('category_name') is-invalid @enderror" placeholder="Nama Kategori">
                             </div>
 
                             <div class="form-group">

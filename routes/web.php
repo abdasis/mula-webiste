@@ -40,9 +40,10 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('edit-informasi', 'PostController@update')->name('katalog.update');
         Route::get('hapus-informasi/{id}', 'PostController@hapus')->name('katalog.hapus');
     });
-
     Route::resource('loker', 'LokerController');
-    Route::resource('category', 'CategoryController');
+    Route::resource('category', 'Backend\CategoryController');
+    Route::resource('slider', 'Backend\SliderController');
+    Route::resource('partner-perusahaan', 'Backend\PartnerPerusahaanController');
 });
 
 
